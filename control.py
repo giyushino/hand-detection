@@ -3,7 +3,7 @@ from ultralytics import YOLO
 import cv2
 import torch
 import MultiWii
-from predict import detect_directions
+from working import detect_directions
 
 
 def interpret(direction):
