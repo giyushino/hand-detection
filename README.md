@@ -1,2 +1,4 @@
 # hand-detection
 Python script to control FPV drone with hand gestures using YOLOv8 framework. Trained own model on 300+ photos captured in different lightings and environments to increase accuracy. Detected hand gestures are fed into a script that translates directions into commands the flight computer of the drone can read. Each hand position is correlated with unique [roll, pitch, yaw, throttle] values which manipulate the flight of the drone. For best results, use collect.py to capture images of your own hand positions pointing up, down, left, right, forward, and backwards. Use software (I used CVAT.ai) to label collected data. Train model on pre-existing weights. 
+
+To use other methods to control your drone, modify the interpret function in the control file. Can hook up radio controller to your computer using a usb, and use pygame to emulate the joysticks. 
