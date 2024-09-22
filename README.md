@@ -1,4 +1,2 @@
 # hand-detection
-Custom trained Yolov8 model used to detection hand gestures 
-
-Data collected using OpenCV video capture, taking pictures every x seconds. Images then labled using CVAT.ai 
+Python script to control FPV drone with hand gestures using YOLOv8 framework. Trained own model on 300+ photos captured in different lightings and environments to increase accuracy. Detected hand gestures are fed into script which translates directions into commands the flight computer of the drone can read. Each hand position is correlated with unique [roll, pitch, yaw, throttle] values to manipulate flight of drone. 
