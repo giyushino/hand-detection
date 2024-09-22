@@ -2,10 +2,10 @@ import cv2
 import os
 import time
 
-def capture(type):
+def capture(hand_type):
     cam = cv2.VideoCapture(0)
 
-    newpath = rf"C:\Users\allan\PycharmProjects\emo\{type}"
+    newpath = rf"folder to {hand_type}"
     if not os.path.exists(newpath):
         os.makedirs(newpath)
 
